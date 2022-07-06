@@ -1,7 +1,12 @@
-public class Bird {
-  // TODO fix class declaration
+public abstract class Bird {
+  public Bird() {}
 
   public void eat() {
-    // TODO print a message that bird is eating
+    System.out.println(this + " bird is eating");
+  }
+
+  @Override
+  public String toString() {
+    return this.getClass().getName();
   }
 }
